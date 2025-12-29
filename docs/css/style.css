@@ -41,12 +41,19 @@ a:hover { text-decoration: underline; }
 /* ===========================
    Cabecera + Menú superior
    =========================== */
+
+
+/* Header sticky */
 .header {
+  position: sticky;       /* se pega al hacer scroll */
+  top: 0;                 /* pegado arriba */
+  z-index: 1000;          /* por encima del contenido */
   background-color: var(--header-bg);
   padding: 16px 0;
-  text-align: center;
-  box-shadow: var(--shadow);  
+  box-shadow: var(--shadow); /* opcional: sombra para separar del contenido */
 }
+.btn:hover { text-decoration: none; }
+.btn.active { background: #6f4e37; }           /* marrón café */
 
 .menu { text-align: center; }
 .menu a {
@@ -60,13 +67,17 @@ a:hover { text-decoration: underline; }
 /* ===========================
    Botones redondeados (pastilla)
    =========================== */
+
 .btn-group{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;              /* separación entre botones */
-  margin: 14px 0 22px;
+  gap: 10px;
   justify-content: center;
+  margin: 8px 0 18px;
 }
+.btn:hover { text-decoration: none; }
+.btn.active { background: #6f4e37; }
+
 
 .btn{
   display: inline-block;
@@ -102,10 +113,14 @@ a:hover { text-decoration: underline; }
 /* ===========================
    Perfil (avatar centrado)
    =========================== */
+
 .profile {
   text-align: center;
-  margin: 24px 0;
+  /* antes: margin: 24px 0; */
+  padding-top: 24px;      /* separación superior que no colapsa con el header */
+  margin: 0 0 24px;       /* mantén separación inferior */
 }
+
 .avatar {
   width: 150px;
   height: 150px;
