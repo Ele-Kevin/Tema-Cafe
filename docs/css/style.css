@@ -192,3 +192,34 @@ img {
   color: #666;
 }
 .footer a { color: var(--brand); }
+
+/* ===========================
+   Modificadores adicionales
+   =========================== */
+   
+/* === Ampliación de contenedor y cards para textos largos === */
+.container {
+  max-width: 1100px;   /* antes: 900px */
+  padding: 24px;       /* un poco más de aire lateral */
+}
+
+/* Card más espaciosa para bloques densos de texto */
+.card--wide {
+  padding: 28px;       /* antes: 20px */
+  margin: 22px 0;      /* separaciones coherentes entre secciones */
+}
+
+/* Tipografía más cómoda en textos largos */
+.card--wide p,
+.card--wide li {
+  font-size: 17px;     /* +1 px para legibilidad */
+  line-height: 1.7;    /* interlineado mayor */
+}
+
+/* Separador sutil entre bloques dentro de una misma card (si lo usas) */
+.hr-soft {
+  border: 0;
+  height: 1px;
+  background: var(--border);
+  margin: 18px 0;
+}
