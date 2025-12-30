@@ -1,12 +1,13 @@
 
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Tema: Café</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Información sobre el café, tipos y cómo se preparan.">
+  <meta name="description" content="Información sobre el café, tipos y cómo se preparan, con imágenes ilustrativas.">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -26,11 +27,21 @@
   <main id="contenido" class="container">
     <h1>El Café</h1>
 
-    <!-- Card principal -->
+    <!-- Descripción -->
     <section class="card card--wide">
       <p>
         El café es una bebida elaborada con granos tostados y molidos. Es apreciado por su sabor y por el efecto estimulante de la cafeína.
       </p>
+      <div class="gallery">
+        <figure class="figure">
+          docs/images/granos.jpg
+          <figcaption>Granos de café: origen del sabor y cuerpo de la bebida.</figcaption>
+        </figure>
+        <figure class="figure">
+          docs/images/barista.jpg
+          <figcaption>Extracción de espresso: base de muchas preparaciones.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- Tipos de café -->
@@ -39,23 +50,54 @@
       <ul class="clean">
         <li><strong>Espresso:</strong> Café concentrado preparado al pasar agua caliente a presión por café molido fino. Es la base de muchas bebidas.</li>
         <li><strong>Capuchino:</strong> Espresso con leche vaporizada y espuma, normalmente en proporción 1/3 café, 1/3 leche, 1/3 espuma.</li>
-        <li><strong>Latte:</strong> Similar al capuchino, pero con más leche y menos espuma, ideal para quienes prefieren un sabor más suave.</li>
-        <li><strong>Americano:</strong> Espresso al que se le añade agua caliente, dando como resultado un café más ligero y menos intenso.</li>
+        <li><strong>Latte:</strong> Similar al capuchino, pero con más leche y menos espuma, ideal para un sabor más suave.</li>
+        <li><strong>Americano:</strong> Espresso al que se le añade agua caliente, dando como resultado un café más ligero.</li>
       </ul>
+
+      <!-- Galería por tipo -->
+      <div class="gallery" aria-label="Imágenes de tipos de café">
+        <figure class="figure">
+          <img src="../images/expreso.jpg" alt="Espresso">
+          <figcaption><strong>Espresso</strong>: 25–30 s de extracción, 7–9 g de café.</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="../images/cappuccino.jpg" alt="Capuchino">
+          <figcaption><strong>Capuchino</strong>: equilibrio entre café, leche y espuma.</figcaption>
+        </figure>
+        <figure class="figure">
+          docs/images/latte.jpg
+          <figcaption><strong>Latte</strong>: más leche, menos espuma; textura sedosa.</figcaption>
+        </figure>
+        <figure class="figure">
+          docs/images/americano.jpg
+          <figcaption><strong>Americano</strong>: espresso + agua caliente.</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <!-- Cómo se prepara -->
+    <!-- Preparación -->
     <section class="card card--wide" aria-labelledby="preparacion">
       <h2 id="preparacion">Cómo se prepara</h2>
       <p>
         Para preparar un buen café, se recomienda usar granos recién molidos y agua de calidad. El método varía según el tipo:
       </p>
       <ul class="clean">
-        <li><strong>Espresso:</strong> Máquina de espresso, 7-9 gramos de café, extracción en 25-30 segundos.</li>
+        <li><strong>Espresso:</strong> Máquina de espresso, 7–9 g de café molido fino, extracción en 25–30 segundos.</li>
         <li><strong>Capuchino:</strong> Preparar un espresso, añadir leche vaporizada y cubrir con espuma.</li>
-        <li><strong>Latte:</strong> Igual que el capuchino, pero con más leche y menos espuma.</li>
-        <li><strong>Americano:</strong> Preparar un espresso y añadir agua caliente (aprox. 90-100 ml).</li>
+        <li><strong>Latte:</strong> Similar al capuchino, con mayor proporción de leche y menos espuma.</li>
+        <li><strong>Americano:</strong> Espresso al que se añade agua caliente (aprox. 90–120 ml).</li>
       </ul>
+
+      <div class="gallery">
+        <figure class="figure">
+          docs/images/molinillo.jpg
+          <figcaption>Molienda adecuada: clave para una extracción equilibrada.</figcaption>
+        </figure>
+        <figure class="figure">
+          <img/images/maquina.jpg
+          <figcaption>Equipo de espresso: temperatura y presión estables.</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 
