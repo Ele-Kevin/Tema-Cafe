@@ -10,14 +10,17 @@
 </head>
 <body>
   <!-- Enlace de salto para accesibilidad -->
-  <a class="skip-link" href="#contenido<header class="header">
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  <header class="header">
     <div class="container">
+      <!-- Menú superior usando tus estilos -->
       <nav class="btn-group" aria-label="Navegación principal">
         <a class="btn" href="../index.html">Inicio</a>
         <a class="btn" href="about.html">Acerca de mí</a>
         <a class="btn" href="contact.html">Contacto</a>
         <a class="btn" href="net.html">Mi Red</a>
-        <a class="btn" href="degree.html">Mi Grado</a>
+        <!-- activo: usa la clase .active y aria-current -->
+        <a class="btn active" href="degree.html">Mi Grado</a>
         <a class="btn" href="topic.html">Tema: Café</a>
       </nav>
     </div>
@@ -25,12 +28,17 @@
 
   <main id="contenido" class="container">
     <h1>Mi Grado</h1>
-    <p>Estudio Ingeniería Informática. Aprenderé programación, redes, bases de datos y más.</p>
 
-    <!-- Ejemplo opcional de secciones para enriquecer la página -->
-    <section aria-labelledby="asignaturas">
+    <!-- Tarjeta principal con el resumen -->
+    <section class="card" aria-labelledby="resumen">
+      <h2 id="resumen">Resumen</h2>
+      <p>Estudio Ingeniería Informática. Aprenderé programación, redes, bases de datos y más.</p>
+    </section>
+
+    <!-- Áreas principales en tarjeta y lista limpia -->
+    <section class="card" aria-labelledby="asignaturas">
       <h2 id="asignaturas">Áreas principales</h2>
-      <ul>
+      <ul class="clean">
         <li>Programación (estructurada, orientada a objetos, paradigmas)</li>
         <li>Bases de datos (modelado, SQL, normalización)</li>
         <li>Redes y sistemas (protocolos, administración, seguridad)</li>
@@ -38,9 +46,10 @@
       </ul>
     </section>
 
-    <section aria-labelledby="competencias">
+    <!-- Competencias en tarjeta y lista limpia -->
+    <section class="card" aria-labelledby="competencias">
       <h2 id="competencias">Competencias</h2>
-      <ul>
+      <ul class="clean">
         <li>Resolución de problemas y pensamiento crítico</li>
         <li>Diseño y desarrollo de aplicaciones</li>
         <li>Gestión de datos y optimización</li>
